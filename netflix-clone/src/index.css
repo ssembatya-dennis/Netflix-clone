@@ -7,16 +7,29 @@ body {
 
 @import url('https://fonts.googleapis.com/css2?family=Arimo:wght@400;500;600;700&display=swap');
 
+.home-page {
+  height: 700px;
+  width: 100%;
+  background-color: #777;
+}
+
 
 .navigation-bar {
+  height: 60px;
   align-items: center;
   display: flex;
   font-size: 1.2rem;
   padding: 0 4%;
-  position: relative;
+  position: sticky;
+  top: 0;
   transition: background-color .4s;
   background-image: linear-gradient(180deg,rgba(0,0,0,.7) 10%,transparent);
 }
+
+.navigation-bar.active {
+  background-color: rgb(20, 20, 20);
+}
+
 
 .main-navigation {
   align-items: center;
